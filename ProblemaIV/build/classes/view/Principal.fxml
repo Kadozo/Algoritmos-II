@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="274.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="265.0" prefWidth="626.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="AlterarPontos" layoutX="7.0" layoutY="60.0" mnemonicParsing="false" onAction="#clicouAlterarPontos" onMouseEntered="#mousedentro" prefHeight="32.0" prefWidth="617.0" text="Adicionar Pontos e Ligações" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="18.0" />
+            <Button fx:id="CalcularCaminho" layoutX="7.0" layoutY="107.0" mnemonicParsing="false" onAction="#clicouCalcularCaminho" prefHeight="32.0" prefWidth="617.0" text="Calcular Caminho" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="18.0" />
+            <Button fx:id="CarregarMapa" layoutX="7.0" layoutY="155.0" mnemonicParsing="false" onAction="#clicouCarregarMapa" prefHeight="32.0" prefWidth="617.0" text="Carregar Mapa" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="18.0" />
+            <Button fx:id="AlterarEstacionamento" layoutX="6.0" layoutY="199.0" mnemonicParsing="false" onAction="#clicouAlterarEstacionamento" prefHeight="32.0" prefWidth="617.0" text="Definir Pontos" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="18.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

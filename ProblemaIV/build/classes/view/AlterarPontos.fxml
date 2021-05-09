@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlterarPontosController">
+  <children>
+      <Separator prefWidth="200.0" />
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="addInput" layoutX="95.0" layoutY="55.0" onAction="#digitouAdd" onKeyPressed="#comecouDigitarAdd" prefHeight="25.0" prefWidth="134.0" />
+            <Label fx:id="labelAddPonto" alignment="CENTER" layoutX="28.0" layoutY="14.0" prefHeight="35.0" prefWidth="134.0" text="Adicionar Pontos">
+               <font>
+                  <Font name="Corbel Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="7.0" layoutY="117.0" prefHeight="0.0" prefWidth="631.0" />
+            <Label layoutX="14.0" layoutY="59.0" text="Quantidade:" />
+            <Separator layoutX="323.0" layoutY="-28.0" orientation="VERTICAL" prefHeight="406.0" prefWidth="6.0" />
+            <Label fx:id="labelRemoverPonto" alignment="CENTER" layoutX="350.0" layoutY="14.0" prefHeight="35.0" prefWidth="134.0" text="Remover Pontos">
+               <font>
+                  <Font name="Corbel Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelconfirmaçãoAdd" layoutX="109.0" layoutY="89.0" prefHeight="25.0" prefWidth="160.0" text="Os pontos foram adicionados" visible="false" />
+            <Label fx:id="labelconfirmaçãoRemove" alignment="CENTER" layoutX="404.0" layoutY="94.0" prefHeight="25.0" prefWidth="160.0" text="O ponto foi removido" visible="false" />
+            <ComboBox fx:id="ComboRemove" layoutX="435.0" layoutY="55.0" onAction="#comboClicado" prefWidth="150.0" />
+            <Label layoutX="336.0" layoutY="59.0" text="Escolha o ponto :" />
+            <Button fx:id="botaoRemover" layoutX="532.0" layoutY="89.0" mnemonicParsing="false" onAction="#clicouRemover" prefHeight="25.0" prefWidth="65.0" text="Remover" />
+            <Label alignment="CENTER" layoutX="48.0" layoutY="120.0" prefHeight="35.0" prefWidth="134.0" text="Adicionar Ligação">
+               <font>
+                  <Font name="Corbel Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="374.0" layoutY="120.0" prefHeight="35.0" prefWidth="134.0" text="Remover Ligação">
+               <font>
+                  <Font name="Corbel Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="176.0" text="Escolha os pontos :" />
+            <ComboBox fx:id="ComboLigacao1" layoutX="152.0" layoutY="175.0" onAction="#comboLigacao1Clicado" prefWidth="150.0" />
+            <ComboBox fx:id="ComboLigacao2" layoutX="152.0" layoutY="221.0" onAction="#comboLigacao2Clicado" prefWidth="150.0" />
+            <ComboBox fx:id="ComboRemoveLigacao" layoutX="441.0" layoutY="175.0" onAction="#comboRemoveLigacaoClicado" prefWidth="150.0" />
+            <Button fx:id="botaoRemoverLigacao" layoutX="546.0" layoutY="272.0" mnemonicParsing="false" onAction="#clicouRemoverLigacao" prefHeight="25.0" prefWidth="65.0" text="Remover" />
+            <Button fx:id="botaoAddLigacao" layoutX="234.0" layoutY="310.0" mnemonicParsing="false" onAction="#clicouAddLigacao" prefHeight="25.0" prefWidth="81.0" text="Adicionar" />
+            <Label layoutX="38.0" layoutY="270.0" prefHeight="17.0" prefWidth="74.0" text="Peso:" />
+            <TextField fx:id="pesoInput" layoutX="153.0" layoutY="266.0" onAction="#digitouInputPeso" />
+            <ComboBox fx:id="ComboRemoveLigacao2" layoutX="441.0" layoutY="221.0" onAction="#comboRemoveLigacao2Clicado" prefWidth="150.0" />
+            <Button fx:id="buttomVoltarAlterarPontos" layoutX="559.0" layoutY="316.0" mnemonicParsing="false" onAction="#clicouVoltarAlterarPontos" text="Voltar" />
+            <Label fx:id="addLigacaoConfirmacao" layoutX="18.0" layoutY="320.0" prefHeight="35.0" prefWidth="194.0" text="Label" visible="false" />
+            <Label fx:id="removerLigacaoConfirmacao" layoutX="354.0" layoutY="320.0" prefHeight="17.0" prefWidth="172.0" text="Label" visible="false" />
+            <Button fx:id="carregarBotao" layoutX="139.0" layoutY="355.0" mnemonicParsing="false" onAction="#cllicouCarregarMapa" text="Carregar dados do mapa atual" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
